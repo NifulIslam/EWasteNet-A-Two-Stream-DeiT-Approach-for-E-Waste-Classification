@@ -3,9 +3,8 @@
 
 <h2>Introduction</h2>
 
-<p>Welcome to the EWasteNet project! This repository contains the code and resources for the "EWasteNet" project,
-    which is a machine learning model that aims to classify electronic waste (e-waste) items using a Two-Stream DeiT
-    (Vision Transformer) approach.</p>
+<p>This repository contains the E-Waste Vision Dataset and EWasteNet, the classifier made of Two-Stream DeiT for classifying the images. 
+    </p>
 
 <p>The project utilizes a deep learning model to analyze images of e-waste items and classify them into specific
     categories, such as smartphones, laptops, printers, etc. The Two-Stream DeiT architecture combines spatial and
@@ -13,24 +12,15 @@
 
 <h2>Dataset</h2>
 
-<p>To train and evaluate the EWasteNet model, we have used a carefully curated dataset of e-waste images. The
+<p>To train and evaluate the EWasteNet model, we have used a carefully curated dataset of 1058 e-waste images. The
     dataset consists of various types of e-waste items, each labeled with the corresponding class/category.</p>
 
-<img align="center" height="800px" width="500px" src="https://raw.githubusercontent.com/NifulIslam/EWasteNet-A-Two-Stream-DeiT-Approach-for-E-Waste-Classification/main/images/twoDeiT.png" alt="Dataset Image">
-
-<p>Please note that the dataset used for this project is not included in this repository. However, you can obtain a
-    similar dataset from publicly available sources or through appropriate channels.</p>
 
 <h2>Model Architecture</h2>
 
-<p>The EWasteNet model is based on the Two-Stream DeiT (Vision Transformer) architecture. It combines two streams:
-    spatial and temporal, to capture both the visual appearance and the sequential context of the e-waste items. The
-    spatial stream processes individual frames of the e-waste images, while the temporal stream analyzes the
-    sequential order of the frames.</p>
+<p>The EWasteNet model is based on the Two-Stream DeiT (Vision Transformer) architecture. It combines two streams. The first steam of EWasteNet passes through a sobel operator that detects the edges while the second steam is directed through an ASPP (Atrous Spatial Pyramid Pooling) and CBAM attention block were multi-scale contextual information is captured.</p>
+<img align="center" height="800px" width="500px" src="https://raw.githubusercontent.com/NifulIslam/EWasteNet-A-Two-Stream-DeiT-Approach-for-E-Waste-Classification/main/images/twoDeiT.png" alt="Dataset Image">
 
-<p>The model architecture consists of several layers, including transformer layers, self-attention mechanisms, and
-    fully connected layers. The model is trained using a combination of supervised learning techniques and large-scale
-    labeled data.</p>
 
 <h2>Results</h2>
 
